@@ -59,7 +59,7 @@
             </div>
             <div>
               <h1 class="outfit-font font-bold text-2xl text-[#080808E6] mb-2">
-                $45000
+                $ <span id="available-balance"> 45000</span>
               </h1>
               <p class="outfit-font font-normal text-lg text-[#08080880]">
                 Available Balance
@@ -132,19 +132,19 @@
           <h1 class="mb-3">Add Money</h1>
           <form class="bg-white p-6 rounded-3xl">
             <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Select A Bank</label><br />
-            <select class="select outfit-font text-base font-light  bg-[#F4F5F7]  rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" >
+            <select id="bank" class="select outfit-font text-base font-light  bg-[#F4F5F7]  rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" >
               <option disabled selected class="input outfit-font text-base font-light text-[#080808B3] bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">Select back</option>
               <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">AB bank</option>
               <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">Avi Bank</option>
               <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">1229 Bank</option>
             </select><br>
             <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3] ">Bank Account Number</label><br>
-            <input type="text" placeholder="Enter 11 digit account number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <input type="text" id="account-number" placeholder="Enter 11 digit account number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
             <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Amount to Add</label><br>
-            <input type="text" placeholder="Add Amount to withdraw" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <input type="text" id="amount-add" placeholder="Add Amount to withdraw" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
             <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Pin Number</label><br>
-            <input type="text" placeholder="Enter 4 digit pin number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
-            <button id="loginBtn" class="btn outfit-font text-xl font-semibold w-full rounded-3xl bg-[#0874F2] text-white h-12">
+            <input type="text" id="u-Pin" placeholder="Enter 4 digit pin number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <button id="addMoneyBtn" class="btn outfit-font text-xl font-semibold w-full rounded-3xl bg-[#0874F2] text-white h-12">
         Add Money
       </button>
 
@@ -156,6 +156,6 @@
       
     </section>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>
