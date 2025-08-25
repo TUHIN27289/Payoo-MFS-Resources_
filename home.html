@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- fontawesome cdnj -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- fontawesome kit -->
-     <script src="https://kit.fontawesome.com/ff0fae7f13.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ff0fae7f13.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google fonts Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,38 +35,126 @@
     <!-- Tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F4F5F7] h-[100vh] w-[470px] p-4 mx-auto  ">
-    <!-- header section -->
-    <section class="">
+  <body class="bg-[#F4F5F7] h-[100vh] w-[470px] mx-auto">
+    <section class="bg-white rounded-3xl">
+      <!-- header section -->
+      <section class="p-4">
         <div class="flex justify-between">
-            <div class="">
-                <p>9:41</p>
-            </div>
-            <div class="grid grid-cols-3 gap-x-2">
-                <i class="fa-solid fa-signal"></i>
-                <i class="fa-solid fa-wifi"></i>
-                <i class="fa-solid fa-battery-full"></i>
-
-            </div>
+          <div class="">
+            <p>9:41</p>
+          </div>
+          <div class="grid grid-cols-3 gap-x-2">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
         </div>
-    </section>
-    <!-- banner section -->
-     <section class="mt-8">
-        <div class="flex justify-between border-b-1 border-gray-400 pb-4">
-            <div class="flex gap-x-2">
-                <div>
-                    <img class="" src="./assets/Group.png">
-                </div>
-                <div>
-                    <h1 class="outfit-font font-bold text-2xl text-[#080808E6] mb-2">$45000</h1>
-                    <p class="outfit-font font-normal text-lg text-[#08080880]">Available Balance</p>
-                </div>
+      </section>
+      <!-- banner section -->
+      <section class="mt-8">
+        <div class="flex justify-between border-b-1 border-gray-400">
+          <div class="flex gap-x-2">
+            <div class="pl-4">
+              <img class="" src="./assets/Group.png" />
             </div>
             <div>
-                <button class="btn outfit-font font-normal text-sm text-[#08080880] w-32 h-12 rounded-lg"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log Out</button>
+              <h1 class="outfit-font font-bold text-2xl text-[#080808E6] mb-2">
+                $45000
+              </h1>
+              <p class="outfit-font font-normal text-lg text-[#08080880]">
+                Available Balance
+              </p>
             </div>
+          </div>
+          <div class="pr-4">
+            <button
+              class="btn outfit-font font-normal text-sm text-[#08080880] w-32 h-12 rounded-lg"
+            >
+              <i
+                class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700"
+              ></i>
+              Log Out
+            </button>
+          </div>
         </div>
-     </section>
+        <!-- tag line -->
+        <div class="mt-6 p-4">
+          <h1 class="outfit-font font-bold text-2xl text-[#080808E6]">
+            🔥 Welcome to Payooo!
+          </h1>
+          <p class="outfit-font font-normal text-base text-[#08080880] mt-2">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-3 outfit-font font-normal text-sm text-[#080808B3] gap-4 p-4"
+        >
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/wallet1.png" alt="" />
+            <p>Add Money</p>
+          </div>
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/send1.png" alt="" />
+            <p>Cashout</p>
+          </div>
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/money1.png" alt="" />
+            <p>Transfer Money</p>
+          </div>
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/bonus1.png" alt="" />
+            <p>Get Bonus</p>
+          </div>
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/purse1.png" alt="" />
+            <p>Pay Bill</p>
+          </div>
+          <div
+            class="w-34 h-28 flex flex-col justify-center items-center border border-gray-300 shadow-sm rounded-xl"
+          >
+            <img src="./assets/transaction1.png" alt="" />
+            <p>Transactions</p>
+          </div>
+        </div>
+        <!-- Add Money section -->
+        <div class="bg-[#F4F5F7] p-6 mt-4 ">
+          <h1 class="mb-3">Add Money</h1>
+          <form class="bg-white p-6 rounded-3xl">
+            <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Select A Bank</label><br />
+            <select class="select outfit-font text-base font-light  bg-[#F4F5F7]  rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" >
+              <option disabled selected class="input outfit-font text-base font-light text-[#080808B3] bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">Select back</option>
+              <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">AB bank</option>
+              <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">Avi Bank</option>
+              <option class="input outfit-font text-base font-light  bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full">1229 Bank</option>
+            </select><br>
+            <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3] ">Bank Account Number</label><br>
+            <input type="text" placeholder="Enter 11 digit account number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Amount to Add</label><br>
+            <input type="text" placeholder="Add Amount to withdraw" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <label for="" class="outfit-font text-base font-medium h-5 text-[#080808B3]">Pin Number</label><br>
+            <input type="text" placeholder="Enter 4 digit pin number" class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12 w-full" /><br>
+            <button id="loginBtn" class="btn outfit-font text-xl font-semibold w-full rounded-3xl bg-[#0874F2] text-white h-12">
+        Add Money
+      </button>
+
+          </form>
+        </div>
+      </section>
+    </section>
+    <section>
+      
+    </section>
 
     <script src="script.js"></script>
   </body>
