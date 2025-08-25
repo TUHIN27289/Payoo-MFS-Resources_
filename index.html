@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google fonts Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center">
+    <div class="bg-[url(./assets/bg.png)] h-32 w-80 bg-cover flex justify-center items-center">
+        <img class="" src="assets/Group.png">
+    </div>
+    <form class="bg-[#FFFFFF] p-8 rounded-3xl w-96">
+      <div class=" ">
+        <label for="" class="outfit-font text-base font-medium h-5"> Mobile Number</label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter your number" id="pNum"
+          class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-2 h-12"
+        />
+      </div>
+      <div class=" ">
+        <label for="" class="outfit-font text-base font-medium h-5"> 4 Digit Pin</label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter 4 Digit Pin" id="uPin"
+          class="input outfit-font text-base font-light bg-[#F4F5F7] rounded-3xl pt-4 pb-4 pl-5 pr-5 mt-2 mb-4 h-12"
+        />
+      </div>
+      <button id="loginBtn" class="btn outfit-font text-xl font-semibold w-full rounded-3xl bg-[#0874F2] text-white h-12">
+        Login
+      </button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
