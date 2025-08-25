@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- fontawesome cdnj -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fontawesome kit -->
      <script src="https://kit.fontawesome.com/ff0fae7f13.js" crossorigin="anonymous"></script>
     <!-- google fonts Outfit -->
@@ -24,14 +26,14 @@
     <!-- Tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F4F5F7] h-[100vh] w-[430px] p-4 mx-auto  ">
+  <body class="bg-[#F4F5F7] h-[100vh] w-[470px] p-4 mx-auto  ">
     <!-- header section -->
     <section class="">
         <div class="flex justify-between">
             <div class="">
                 <p>9:41</p>
             </div>
-            <div class="">
+            <div class="grid grid-cols-3 gap-x-2">
                 <i class="fa-solid fa-signal"></i>
                 <i class="fa-solid fa-wifi"></i>
                 <i class="fa-solid fa-battery-full"></i>
@@ -39,6 +41,23 @@
             </div>
         </div>
     </section>
+    <!-- banner section -->
+     <section class="mt-8">
+        <div class="flex justify-between border-b-1 border-gray-400 pb-4">
+            <div class="flex gap-x-2">
+                <div>
+                    <img class="" src="./assets/Group.png">
+                </div>
+                <div>
+                    <h1 class="outfit-font font-bold text-2xl text-[#080808E6] mb-2">$45000</h1>
+                    <p class="outfit-font font-normal text-lg text-[#08080880]">Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn outfit-font font-normal text-sm text-[#08080880] w-32 h-12 rounded-lg"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log Out</button>
+            </div>
+        </div>
+     </section>
 
     <script src="script.js"></script>
   </body>
