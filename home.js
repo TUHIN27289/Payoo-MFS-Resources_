@@ -5,8 +5,7 @@ const validPin = 1234;
 document.getElementById("addMoneyBtn").addEventListener("click", function (e) {
   e.preventDefault();
   const bankInfo = document.getElementById("bank").value;
-  const accountNumber =
-    document.getElementById("account-number").value;
+  const accountNumber = document.getElementById("account-number").value;
   const addAmount = parseInt(document.getElementById("amount-add").value);
   const uPin = parseInt(document.getElementById("u-Pin").value);
   const availableBalance = parseInt(
@@ -36,22 +35,41 @@ document.getElementById("addMoneyBtn").addEventListener("click", function (e) {
   document.getElementById("available-balance").innerText = totalBalance;
 });
 
-
 //  cash out functionality
-
-
-
-
+document.getElementById("cashOutBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  const acctNumber = document.getElementById("acc-number").value;
+  const cashOutAmount = parseInt(
+    document.getElementById("withdraw-amount").value);
+  const pin = parseInt(document.getElementById("cash-out-Pin").value);
+  console.log(acctNumber, cashOutAmount, pin);
+  const availableBalance = parseInt(document.getElementById("available-balance").innerText);
+  console.log(availableBalance);
+  if (acctNumber.length < 11 || acctNumber.length > 11) {
+    alert("Account number must be 11 digit");
+    return;
+  }
+  if(pin.length<4|| pin.length>4){
+    alert('Pin must be 4 digit')
+    return;
+  }
+  else if(pin!==validPin){
+    alert('Invalid pin')
+    return;
+  }
+  const totalBalance = availableBalance - cashOutAmount;
+  document.getElementById("available-balance").innerText = totalBalance;
+});
 
 // toggle function
 // display add money
-document.getElementById('add-money-btn').addEventListener('click',function(){
-    document.getElementById('cash-out-feature').style.display='none';
-    document.getElementById('add-money-feature').style.display='block';
-})
+document.getElementById("add-money-btn").addEventListener("click", function () {
+  document.getElementById("cash-out-feature").style.display = "none";
+  document.getElementById("add-money-feature").style.display = "block";
+});
 
 // display cash out money
-document.getElementById('cash-out-btn').addEventListener('click',function(){
-    document.getElementById('add-money-feature').style.display='none';
-    document.getElementById('cash-out-feature').style.display='block';
-})
+document.getElementById("cash-out-btn").addEventListener("click", function () {
+  document.getElementById("add-money-feature").style.display = "none";
+  document.getElementById("cash-out-feature").style.display = "block";
+});
