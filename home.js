@@ -35,3 +35,23 @@ document.getElementById("addMoneyBtn").addEventListener("click", function (e) {
   );
   document.getElementById("available-balance").innerText = totalBalance;
 });
+
+
+//  cash out functionality
+
+
+
+
+
+// toggle function
+// display add money
+document.getElementById('add-money-btn').addEventListener('click',function(){
+    document.getElementById('cash-out-feature').style.display='none';
+    document.getElementById('add-money-feature').style.display='block';
+})
+
+// display cash out money
+document.getElementById('cash-out-btn').addEventListener('click',function(){
+    document.getElementById('add-money-feature').style.display='none';
+    document.getElementById('cash-out-feature').style.display='block';
+})
