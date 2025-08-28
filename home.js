@@ -162,6 +162,13 @@ document.getElementById("cashOutBtn").addEventListener("click", function (e) {
     alert("Invalid pin");
     return;
   }
+  if(withdrawAmount<=0){
+    alert('Insert correct amount')
+    return;
+  }else if(withdrawAmount>availableBalance){
+    alert('Insufficient balance')
+    return;
+  }
   const totalBalance = availableBalance - withdrawAmount;
   // document.getElementById('available-balance').innerText=totalBalance;
   setValue("available-balance", totalBalance);
